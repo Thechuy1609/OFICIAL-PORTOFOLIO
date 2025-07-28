@@ -1,0 +1,219 @@
+<div class="bg-white">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-gray-900 bg-white shadow-md">
+    <nav class="flex items-center p-6 lg:px-8 justify-center">
+      <div class="lg:flex lg:gap-x-12">
+        <a href="#aboutme" class="text-3xl font-semibold text-gray-900 relative group">
+          About me
+          <span class="absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+        </a>
+        <a href="#techstack" class="text-3xl font-semibold text-gray-900 relative group">
+          Tech stack
+          <span class="absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+        </a>
+        <a href="#projects" class="text-3xl font-semibold text-gray-900 relative group">
+          Projects
+          <span class="absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+        </a>
+        <a href="#contact" class="text-3xl font-semibold text-gray-900 relative group">
+          Contact
+          <span class="absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+<div id="aboutme" class="relative isolate pt-14">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-16 lg:px-8 lg:py-40">
+    <div class=" max-w-2xl lg:mx-0 lg:flex-auto lg:ml-24"> 
+      <h1 class="mt-10 text-pretty text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">Hello! ,  My name is Alessandro Chuy</h1>
+      <h2 class="mt-4 text-pretty text-4xl font-semibold tracking-tight text-sky-600 sm:text-5xl">Full Stack Web Developer</h2>
+      
+      <p class="mt-8 text-lg text-gray-700 dark:text-gray-300 sm:text-xl leading-relaxed">
+        I'm a self-taught web developer with a passion for crafting engaging and functional digital experiences. 
+        Over the years, I've built a solid foundation in both front-end aesthetics and back-end logic, allowing me 
+        to tackle projects that are as visually appealing as they are robust.
+      </p>
+      
+      <p class="mt-4 text-lg text-gray-700 dark:text-gray-300 sm:text-xl leading-relaxed">
+        I approach each project with determination and creativity, eager to learn new techniques while refining what I 
+        already know. My journey in web development has been one of steady growth and continuous exploration, and I 
+        value collaboration and feedback as essential parts of that process.
+      </p>
+
+      <div class="mt-10 flex items-center gap-x-6">
+        <a href="mailto:alessandrochuyt@hotmail.com" class="rounded-lg bg-sky-600 px-5 py-3 text-lg font-semibold text-white shadow-md hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-600">
+          Contact me
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="techstack" class="mx-auto max-w-5xl px-6 lg:px-8 border border-gray-300 rounded-2xl shadow-xl bg-white dark:bg-gray-900 p-10">
+  <h2 class="text-center font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-4xl">Tech stack</h2>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center gap-10 mt-8">
+    <%[
+      { name: "HTML", img: "html.png" },
+      { name: "CSS", img: "css.png" },
+      { name: "JavaScript", img: "js.png" },
+      { name: "Ruby", img: "ruby.png" },
+      { name: "Ruby on Rails", img: "rails.png" },
+      { name: "Stimulus", img: "stimulus.png" },
+      { name: "PostgreSQL", img: "postgresql.png" },
+      { name: "Tailwind CSS", img: "tailwind.png" },
+    ].each do |t| %>
+      <div class="flex flex-col items-center w-full space-y-3 transform transition duration-300 hover:scale-105">
+        <%= image_tag t[:img], class: "h-24 sm:h-28 w-auto object-contain drop-shadow-md" %>
+        <p class="text-lg font-semibold text-gray-800 dark:text-gray-200"><%= t[:name] %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+<div id="projects" class="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+  <div class="relative isolate overflow-hidden bg-sky-700 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+    <div class="mx-auto grid max-w-xl grid-cols-1 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:items-start lg:gap-x-16">
+      
+
+      <div class="lg:col-span-1 lg:pr-6">
+  <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-3xl">My Personal Projects</h2>
+  <div class="max-w-xl lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+    <dl class="max-w-xl space-y-9 text-base text-gray-300 lg:max-w-none">
+      
+      <div class="flex flex-col space-y-2">
+        <div class="flex items-center">
+          <dt class="text-xl font-semibold text-white">Work Time-Tracker & Invoice Generator</dt>
+          <a href="https://workday-85n7.onrender.com/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path>
+          </svg>
+          </a>
+        </div>
+        <dd class="text-lg font-medium">An app that tracks your time and generates invoices based on tracked hours.</dd>
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <div class="flex items-center space-x-2">
+          <dt class="text-xl font-semibold text-white">Facebook Clone</dt>
+           <a href="https://github.com/Thechuy1609/OdinBook/tree/main" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path>
+          </svg>
+           </a>
+        </div>
+        <dd class="text-lg font-medium">An app where you can like, comment, and create posts, with following functionality.</dd>
+      </div>
+
+    </dl>
+  </div>
+</div>
+
+
+
+<div data-controller="images" class="lg:col-span-1 lg:border-l lg:border-white/10 lg:pl-6">
+  <div class="relative w-[740px] h-[550px] flex justify-center items-center -ml-3">
+    <%= image_tag "macbook.png", class: "w-full h-full object-contain" %>
+    <div class="absolute top-[18%] left-[12%] w-[76.3%] h-[64.3%] overflow-hidden">
+      <div data-images-target="project" class="image-item active" style="width: 100%; height: 100%;">
+        <%= image_tag "project1.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project4.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project3.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project2.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project5.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project21.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 105%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project22.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 100%;" %>
+      </div>
+      <div data-images-target="project" class="image-item" style="width: 100%; height: 100%;">
+        <%= image_tag "project23.jpg", class: "object-cover w-full h-full", style: "width: 100%; height: 105%;" %>
+      </div>
+    </div>
+<button data-action="click->images#previous" 
+  class="absolute left-9 top-[calc(50%+145px)] transform -translate-y-50 z-10 
+         transition duration-200 ease-in-out hover:scale-120 p-3 rounded-full group">
+  <svg width="40" height="40" viewBox="0 0 512 512" fill="black" xmlns="http://www.w3.org/2000/svg"
+       class="group-hover:fill-gray-800 transition duration-200">
+    <path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/>
+  </svg>
+</button>
+
+<button data-action="click->images#next" 
+  class="absolute right-4 top-[calc(50%+145px)] transform -translate-y-50 z-10 
+         transition duration-200 ease-in-out hover:scale-120 p-3 rounded-full group">
+  <svg width="40" height="40" viewBox="0 0 512 512" fill="black" xmlns="http://www.w3.org/2000/svg"
+       class="group-hover:fill-gray-800 transition duration-200">
+    <path d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"/>
+  </svg>
+</button>
+
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+  </div>
+</div><br>
+<div id="contact" class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-35">
+    <div class="bg-gray-50 sm:rounded-lg w-full px-6 py-12 flex justify-center items-center h-115">
+      <div class="max-w-xl">
+        <h3 class="text-3xl font-semibold text-gray-900">Let's build something!</h3>
+        <div class="mt-4 text-xl text-gray-500">
+          <p>Have a great idea? I'm a web developer eager to collaborate on projects that push boundaries and make a difference.  Let's connect and discuss how we can turn your concept into a powerful online presence.</p>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <a href="mailto:alessandrochuyt@hotmail.com" type="button" class="rounded-md bg-sky-600 hover:bg-sky-700 px-6 py-3 text-lg font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
+            Contact me
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<footer class="mt-4 sm:mt-22">
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-10 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="mt-2 border-t border-gray-900 pt-8 flex flex-col items-center md:flex-row md:justify-between">
+
+      <p class="mt-4 text-xl text-gray-700 md:mt-0 font-semibold">&copy; 2025 Alessandro Chuy. All rights reserved.</p>
+      <div class="flex">
+        <a href="https://github.com/Thechuy1609" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-600">
+          <svg class="size-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</div>
