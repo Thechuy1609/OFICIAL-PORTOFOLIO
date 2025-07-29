@@ -1,0 +1,70 @@
+.bg-white
+  %header.fixed.inset-x-0.top-0.z-50.border-b.border-gray-900.bg-white.shadow-md
+    %nav{class: "flex items-center p-6 lg:-px-8 justify-center"}
+      %div{class: "lg:flex lg:gap-x-12"}
+        %a{href: "#aboutme", class: "text-3xl font-semibold text-gray-900 relative group"}
+          About me
+          %span{class: "absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"}
+        %a{href: "#techstack", class: "text-3xl font-semibold text-gray-900 relative group"}
+          Tech stack
+          %span{class: "absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"}
+        %a{href: "#projects", class: "text-3xl font-semibold text-gray-900 relative group"}
+          Projects
+          %span{class: "absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"}
+        %a{href: "#contact", class: "text-3xl font-semibold text-gray-900 relative group"}
+          Contact
+          %span{class: "absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"}
+
+#aboutme{class: "relative isolate pt-14"}
+  %div{class: "mx-auto.max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-16 lg:px-8 lg:py-40"}
+    %div{class: "max-w-2xl lg:mx-0 lg:flex-auto lg:ml-24"}
+      %h1{class: "mt-10 text-pretty text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl"}
+        Hello! , My name is Alessandro Chuy
+      %h2{class: "mt-4 text-pretty text-4xl font-semibold tracking-tight text-sky-600 sm:text-5xl"}
+        Full Stack Web Developer
+      %p{class: "mt-8 text-lg text-gray-700 dark:text-gray-300 sm:text-xl leading-relaxed"}
+        I'm a web developer with a passion for crafting engaging and functional digital experiences. 
+        Over the years, I've built a solid foundation in both front-end aesthetics and back-end logic, allowing me 
+        to tackle projects that are as visually appealing as they are robust.
+      %p{class: "mt-4 text-lg text-gray-700 dark:text-gray-300 sm:text-xl leading-relaxed"}
+        I approach each project with determination and creativity, eager to learn new techniques while refining what I 
+        already know. My journey in web development has been one of steady growth and continuous exploration, and I 
+        value collaboration and feedback as essential parts of that process.
+      .mt-10.flex.items-center.gap-x-6
+        %a{href: "mailto:alessandrochuyt@hotmail.com", class: "rounded-lg bg-sky-600 px-5 py-3 text-lg font-semibold text-white shadow-md hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-600"}
+          Contact me
+
+#techstack{class: "mx-auto max-w-5xl px-6 lg:px-8 border border-gray-300 rounded-2xl shadow-xl bg-white dark:bg-gray-900 p-10"}
+  %h2{class: "text-center font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-4xl"}
+    Tech stack
+  %div{class: "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 place-items-center gap-10 mt-8"}
+    - @techstack.each do |t|
+      %div{class: "flex flex-col items-center w-full space-y-3 transform transition duration-300 hover:scale-105"}
+        = image_tag t[:img], class: "h-24 sm:h-28 w-auto object-contain drop-shadow-md"
+        %p{class: "text-lg font-semibold text-gray-800 dark:text-gray-200"}
+          = t[:name]
+
+
+#contact{class: "mx-auto max-w-7xl sm:px-6 lg:px-8 mt-35"}
+  %div{class: "bg-gray-50 sm:rounded-lg w-full px-6 py-12 flex justify-center items-center h-115"}
+    .max-w-xl
+      %h3.text-3xl.font-semibold.text-gray-900
+        Let's build something!
+      .mt-4.text-xl.text-gray-500
+        %p
+          Have a great idea? I'm a web developer eager to collaborate on projects that push boundaries and make a difference.
+          Let's connect and discuss how we can turn your concept into a powerful online presence.
+      .mt-6.flex.justify-center
+        %a{href: "mailto:alessandrochuyt@hotmail.com", class: "rounded-md bg-sky-600 hover:bg-sky-700 px-6 py-3 text-lg font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"}
+          Contact me
+
+%footer{class: "mt-4 sm:mt-22"}
+  %div{class: "mx-auto.max-w-7xl px-6 pb-8 pt-10 sm:pt-24 lg:px-8 lg:pt-32"}
+    %div{class: "flex mt-2.border-t.border-gray-900.pt-8 flex-col items-center md:flex-row md:justify-between"}
+      %p{class: "mt-4 text-xl text-gray-700 md:mt-0 font-semibold"}
+        &copy; 2025 Alessandro Chuy. All rights reserved.
+      .flex.gap-4
+        %a{href: "https://www.linkedin.com/in/alessandro-chuy-291223305", target: "_blank", rel: "noopener noreferrer", class: "text-black hover:text-gray-600 text-3xl"}
+          %i.fa-brands.fa-linkedin
+        %a{href: "https://github.com/Thechuy1609", target: "_blank", rel: "noopener noreferrer", class: "text-black hover:text-gray-600 text-3xl"}
+          %i.fa-brands.fa-github

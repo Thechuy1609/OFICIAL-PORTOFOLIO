@@ -54,7 +54,8 @@ group :development, :test do
 end
 
 group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "haml"
+  gem "haml_lint", require: false
   gem "web-console"
 end
 
